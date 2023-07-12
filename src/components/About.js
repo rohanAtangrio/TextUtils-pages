@@ -1,15 +1,28 @@
 import React, { useState } from "react";
+// import Alert from "./Alert";
 
 export default function About(props) {
-  // const [myStyle, setMyStyle] = useState({
-  //   color: "white",
-  //   backgroundColor: "black",
-  // });
+  const [myStyle, setMyStyle] = useState({
+    color: "white",
+    backgroundColor: "black",
+  });
+  // const [btnText, setBtnText] = useState("Enable Dark Mode");
 
-  let myStyle = {
-    color: props.mode === "dark" ? "white" : "#042743",
-    backgroundColor: props.mode === "dark" ? "rgb(36 74 104)" : "white",
-  };
+  // const toggleStyle = () => {
+  //   if (myStyle.color === "white") {
+  //     setMyStyle({
+  //       color: "black",
+  //       backgroundColor: "white",
+  //     });
+  //     setBtnText("Enable Dark Mode");
+  //   } else {
+  //     setMyStyle({
+  //       color: "white",
+  //       backgroundColor: "black",
+  //     });
+  //     setBtnText("Enable Light Mode");
+  //   }
+  // };
 
   // const [btnText, setBtnText] = useState("Enable Dark Mode");
 
@@ -47,7 +60,7 @@ export default function About(props) {
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              <strong>Analyze your text</strong>
+              <strong>Analyze your text </strong>
             </button>
           </h2>
           <div
@@ -58,7 +71,7 @@ export default function About(props) {
           >
             <div className="accordion-body" style={myStyle}>
               Textutils gives you a way to analyze your text quickly and
-              efficiently. Be it word count or charatcter count.
+              efficiently.Be it word count or charatcter count.
             </div>
           </div>
         </div>

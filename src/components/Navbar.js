@@ -1,4 +1,7 @@
 import React from "react";
+// import PropTypes from "prop-types";
+// import About from "./About";
+// import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -10,7 +13,7 @@ export default function Navbar(props) {
       <div className="container-fluid">
         {/* <a className="navbar-brand" href="#">
           {props.title}
-        </a> */}
+        </a>  */}
         <Link className="navbar-brand" to="/">
           {props.title}
         </Link>
@@ -36,6 +39,9 @@ export default function Navbar(props) {
               </Link>
             </li>
             <li className="nav-item">
+              <a className="nav-link" href="/about">
+                {/* <About /> */}About
+              </a>
               {/* <a className="nav-link" href="/about">
                 {props.aboutText}
               </a> */}
@@ -138,7 +144,7 @@ Navbar.propTypes = {
   aboutText: PropTypes.string.isRequired,
 };
 
-// If no value passed then below value will be assigned
+// // If no value passed then below value will be assigned
 Navbar.defaultProps = {
   title: "Set title here",
   aboutText: "About",
