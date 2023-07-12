@@ -4,7 +4,7 @@ import React, { useState } from "react";
 export default function About(props) {
   const [myStyle, setMyStyle] = useState({
     color: "white",
-    backgroundColor: "black",
+    backgroundColor: "#14466e",
   });
   // const [btnText, setBtnText] = useState("Enable Dark Mode");
 
@@ -45,7 +45,7 @@ export default function About(props) {
   return (
     <div
       className="container"
-      style={{ color: props.mode === "dark" ? "white" : "#042743" }}
+      style={{ backgroundcolor: props.mode === "dark" ? "white" : "#042743" }}
     >
       <h1 className="my-3">About Us</h1>
       <div className="accordion" style={myStyle} id="accordionExample">
